@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kerara♡ ̆̈    </title>
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="slider-wrapper">
+        <button id="prev-slide" class="slide-button material-symbols-rounded">
+          chevron_left
+        </button>
+        <ul class="image-list">
+          <img class="image-item" src="image/image1.jpg" alt="img-1" />
+          <img class="image-item" src="image/image2.jpg" alt="img-2" />
+          <img class="image-item" src="image/image3.jpg" alt="img-3" />
+          <img class="image-item" src="image/image4.jpg" alt="img-4" />
+          <img class="image-item" src="image/image5.jpg" alt="img-5" />
+          <img class="image-item" src="image/image6.jpg" alt="img-6" />
+          <img class="image-item" src="image/image7.jpg" alt="img-7" />
+          <img class="image-item" src="image/image8.jpg" alt="img-8" />
+          <img class="image-item" src="image/image9.jpg" alt="img-9" />
+          <img class="image-item" src="image/image10.jpg" alt="img-10" />
+          <img class="image-item" src="image/image11.jpg" alt="img-11" />
+        </ul>
+        <button id="next-slide" class="slide-button material-symbols-rounded">
+          chevron_right
+        </button>
+      </div>
+      <div class="slider-scrollbar">
+        <div class="scrollbar-track">
+          <div class="scrollbar-thumb"></div>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 20px;">
+        <span class="material-symbols-outlined" style="display: flex; justify-content: center; color: rgb(255, 255, 255);">
+            favorite
+            </span>
+    
+            <div class="music-player">
+
+                <div>
+                    <img src="image/niki.jfif" alt="" style="width: 50px; height: 50px;">
+                </div>
+                <div>
+                    <h1>Backburner</h1>
+                    <p>Nikki</p>
+                    <audio id="song">
+                        <source src="NIKI -  Backburner (Official Lyric Video).mp3" type="audio/mpeg">
+                    </audio>
+                    <input type="range" value="0" id="progress">
+                    <div class="controls">
+                        <div><i class="fa fa-backward"></i></div>
+                        <div onclick="playPause()"><i class="fa fa-play" id="ctrlIcon"></i></div>
+                        <div><i class="fa fa-forward"></i></div>
+                    </div>
+                </div>
+                    
+            </div>
+      </div>
+    
+    </div>
+    
+  </body>
+</html>
