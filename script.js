@@ -1,3 +1,23 @@
+
+function hearts() {
+
+    const container = document.querySelector('.container');
+    const creat = document.createElement('div');
+    creat.classList.add('hearts');
+    creat.innerHTML = '💗'
+
+    creat.style.left = Math.random() * 100 + 'vw';
+    creat.style.animationDuration = Math.random() * 2 + 3 + 's';
+
+    container.appendChild(creat)
+    setTimeout(() => {
+        creat.remove();
+    }, 3000)
+}
+setInterval(hearts, 100);
+
+
+
 const initSlider = () => {
     const imageList = document.querySelector(".slider-wrapper .image-list");
     const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
@@ -95,4 +115,16 @@ progress.onchange = function () {
 window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    let dexSign = document.getElementById("dex-sign");
+
+    function restartAnimation() {
+        dexSign.classList.remove("play"); // Remove the class to reset animation
+        void dexSign.offsetWidth; // Trigger reflow (forces a DOM recalculation)
+        dexSign.classList.add("play"); // Reapply animation class
+    }
+
+    setInterval(restartAnimation, 4000); // Restart animation every 4 seconds
+});
 

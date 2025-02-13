@@ -4,8 +4,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image" href="./image/image7.jpg">
-    <title>Kerara♡ ̆̈    </title>
+    <!-- <link rel="shortcut icon" type="image" href="./image/image7.jpg"> -->
+    <title>Jewel♡ ̆̈    </title>
     <!-- Google Fonts Link For Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,60 +20,15 @@
   <body>
     <div class="container">
 
-      <div class="slider-wrapper">
-        <button id="prev-slide" class="slide-button material-symbols-rounded">
-          chevron_left
-        </button>
-        <ul class="image-list">
-          <img class="image-item" src="image/image1.jpg" alt="img-1" />
-          <img class="image-item" src="image/image2.jpg" alt="img-2" />
-          <img class="image-item" src="image/image3.jpg" alt="img-3" />
-          <img class="image-item" src="image/image4.jpg" alt="img-4" />
-          <img class="image-item" src="image/image5.jpg" alt="img-5" />
-          <img class="image-item" src="image/image6.jpg" alt="img-6" />
-          <img class="image-item" src="image/image7.jpg" alt="img-7" />
-          <img class="image-item" src="image/image8.jpg" alt="img-8" />
-          <img class="image-item" src="image/image9.jpg" alt="img-9" />
-          <img class="image-item" src="image/image10.jpg" alt="img-10" />
-          <img class="image-item" src="image/image11.jpg" alt="img-11" />
-        </ul>
-        <button id="next-slide" class="slide-button material-symbols-rounded">
-          chevron_right
-        </button>
-      </div>
-      <div class="slider-scrollbar">
-        <div class="scrollbar-track">
-          <div class="scrollbar-thumb"></div>
+      <section>
+        <div class="quote">
+          <cite>
+            "Hey! I just wanted to say thank you for saying yes to my invitation for a Valentine's date. It means a lot to me, especially since this is my first time planning something like this. I'd love to catch a movie together, either at 10 PM or whenever works best for you.
+          </cite>
+          <span id="replay"></span>
+          <a id="dex-sign" class="play" href="https://joshuamrt.github.io/ivanm.dev/" target="_blank"></a>
         </div>
-      </div>
-
-      <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 20px;">
-        <span class="material-symbols-outlined" style="display: flex; justify-content: center; color: rgb(255, 255, 255);">
-            favorite
-            </span>
-    
-            <div class="music-player">
-
-                <div>
-                    <img src="image/niki.jfif" alt="" style="width: 50px; height: 50px;">
-                </div>
-                <div>
-                    <h1>Everything</h1>
-                    <p>Cliff</p>
-                    <audio id="song">
-                        <source src="Cliff - Everything (Official Lyric Video).mp3" type="audio/mpeg">
-                    </audio>
-                    <input type="range" value="0" id="progress">
-                    <div class="controls">
-                        <div><i class="fa fa-backward"></i></div>
-                        <div onclick="playPause()"><i class="fa fa-play" id="ctrlIcon"></i></div>
-                        <div><i class="fa fa-forward"></i></div>
-                    </div>
-                </div>
-                    
-            </div>
-      </div>
-    
+      </section>
     </div>
     
   </body>
